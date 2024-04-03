@@ -22,13 +22,15 @@ La sintaxis general de una función lambda es [capturas](parámetros) -> tipo_re
 ```
 ### Corchetes [ ] (capturas):
 
-   Los corchetes [ ] son utilizados para especificar las capturas, es decir, las variables externas que la función lambda puede utilizar. Hay tres tipos de capturas:
-   [ ]: No captura ninguna variable externa.
-   [nombre]: Captura la variable nombre por valor.
-   [&nombre]: Captura la variable nombre por referencia.
-   [=]: Captura todas las variables externas por valor.
-   [&]: Captura todas las variables externas por referencia.
-   Estas capturas permiten que la función lambda acceda a variables fuera de su ámbito local.
+   Los corchetes [ ] son utilizados para especificar las capturas, es decir, las variables externas que la función lambda puede utilizar. 
+   
+   Hay tres tipos de capturas:
+      [ ]: No captura ninguna variable externa.
+      [nombre]: Captura la variable nombre por valor.
+      [&nombre]: Captura la variable nombre por referencia.
+      [=]: Captura todas las variables externas por valor.
+      [&]: Captura todas las variables externas por referencia.
+      Estas capturas permiten que la función lambda acceda a variables fuera de su ámbito local.
 
 ### Paréntesis () (parámetros):
 
@@ -42,6 +44,8 @@ La sintaxis general de una función lambda es [capturas](parámetros) -> tipo_re
    El cuerpo { } de la función lambda contiene la implementación de la función. Es donde se especifica qué hace la función lambda cuando se ejecuta.
    Puede contener cualquier número de declaraciones y expresiones válidas en C++.
    La sintaxis y las reglas dentro del cuerpo son las mismas que las de una función regular.
+
+### Uso
 
 Las funciones lambda son útiles en situaciones donde se necesitan funciones simples y anónimas, como en algoritmos de la STL (std::sort, std::transform, etc.) y algoritmos personalizados.
 También son útiles en contextos donde se necesitan objetos funcionales, como en la programación funcional y el diseño de API modernas.
