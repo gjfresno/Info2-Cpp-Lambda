@@ -12,13 +12,14 @@ La sintaxis general de una función lambda es [capturas](parámetros) -> tipo_re
       [capturas] (parámetros) -> tipo_retorno {
          // Cuerpo de la función lambda
       }
+```
 
 ```cpp
    // Función lambda que suma dos números enteros
    auto suma = [](int a, int b) -> int {
       return a + b;
    };
-
+```
 ### Corchetes [ ] (capturas):
 
    Los corchetes [ ] son utilizados para especificar las capturas, es decir, las variables externas que la función lambda puede utilizar. Hay tres tipos de capturas:
@@ -35,7 +36,7 @@ La sintaxis general de una función lambda es [capturas](parámetros) -> tipo_re
    Flecha -> (tipo de retorno, opcional):
 
    La flecha -> es opcional y se utiliza para especificar el tipo de retorno de la función lambda. Si la función lambda tiene un cuerpo que incluye una declaración return, el tipo de retorno puede deducirse automáticamente y no es necesario especificarlo explícitamente.
-   
+
 ### Cuerpo { } (implementación):
 
    El cuerpo { } de la función lambda contiene la implementación de la función. Es donde se especifica qué hace la función lambda cuando se ejecuta.
